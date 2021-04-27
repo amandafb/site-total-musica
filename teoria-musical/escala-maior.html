@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo Escala Maior</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+     <!-- Font Awesome -->
+     <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+     integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous">
+ </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="topo">
+        <!-- Navegação -->
+        <nav class="navbar navbar-dark bg-dark d-flex justify-content-between">
+            <!-- Voltar -->
+            <div c lass="col-12">
+                <a class="navbar-brand" href="indice.html" id="logo-menu">Voltar</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <!-- Descrição -->
+            <div class="row">
+                <div class="col-12 my-5 text-center">
+                    <h1 class="mb-4">Escala Maior</h1>
+                    <h3>Exemplo: Escala de Dó (C)</h3>
+                    <div class="d-flex justify-content-around align-items-center mt-4">
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <h5>Nota</h5>
+                            <h5>Grau</h5>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                             <h5>Dó</h5>
+                             <h5>I</h5>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                             <h5>Ré</h5>
+                             <h5>II</h5>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                             <h5>Mi</h5>
+                             <h5>III</h5>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                             <h5>Fá</h5>
+                             <h5>IV</h5>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                             <h5>Sol</h5>
+                             <h5>V</h5>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                             <h5>Lá</h5>
+                             <h5>VI</h5>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                             <h5>Si</h5>
+                             <h5>VII</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Consulta -->
+            <div class="row">
+                <!-- Ciclo das Quartas -->
+                <div class="col-sm-6 px-5 my-2">
+                    <h4>Ciclo das Quartas (b)</h4>
+                    <form action="Post">
+                        <!-- Select Escala -->
+                        <div class="form-group">
+                            <label for="cicloBemois">Escala</label>
+                            <select name="cicloBemois" id="cicloBemois" class="form-control">
+                                <option value="escolha">Escolha a escala</option>
+                                <option value="7">Fá Maior (F)</option>
+                                <option value="6">Sib Maior (Bb)</option>
+                                <option value="5">Mib Maior (Eb)</option>
+                                <option value="4">Láb Maior (Ab)</option>
+                                <option value="3">Réb Maior (Db)</option>
+                                <option value="2">Solb Maior (Gb)</option>
+                                <option value="1">Dób Maior (Cb)</option>
+                            </select>
+                        </div>
+                        <!-- Select Grau -->
+                        <div class="form-group">
+                            <label for="grauCicloBemois">Grau</label>
+                            <select name="grauCicloBemois" id="grauCicloBemois" class="form-control">
+                                <option value="escolha">Escolha o grau</option>
+                                <option value="0">I</option>
+                                <option value="2">II</option>
+                                <option value="4">III</option>
+                                <option value="6">IV</option>
+                                <option value="8">V</option>
+                                <option value="10">VI</option>
+                                <option value="12">VII</option>
+                            </select>
+                        </div>
+                        <!-- Botão Enviar -->
+                        <div class="py-4">
+                            <button type="text" id="btnBemois" class="button buttonTeoria"
+                                onclick="calcularEscalasBemois()">Enviar</button>
+                        </div>
+                        <!-- Resultado -->
+                        <div class="form-group my-4">
+                            <label for="resultadoInputBemois">Resposta</label>
+                            <input type="text" name="resultado2" id="resultadoInputBemois" disabled
+                                class="form-control">
+                            <!-- Botão Nova Consulta -->
+                            <div class="py-4">
+                                <button type="text" id="novo" class="button buttonTeoria"
+                                    onclick="limparInputs()">Novo</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Ciclo das Quintas -->
+                <div class="col-sm-6 px-5 my-2">
+                    <h4>Ciclo das Quintas (#)</h4>
+                    <form action="Post">
+                        <!-- Select Escala -->
+                        <div class="form-group">
+                            <label for="cicloSustenidos">Escala</label>
+                            <select name="cicloSustenidos" id="cicloSustenidos" class="form-control">
+                                <option value="escolha">Escolha a escala</option>
+                                <option value="1">Sol Maior (G)</option>
+                                <option value="2">Ré Maior (D)</option>
+                                <option value="3">Lá Maior (A)</option>
+                                <option value="4">Mi Maior (E)</option>
+                                <option value="5">Si Maior (B)</option>
+                                <option value="6">Fá# Maior (F#)</option>
+                                <option value="7">Dó# Maior (C#)</option>
+                            </select>
+                        </div>
+                        <!-- Select Grau -->
+                        <div class="form-group">
+                            <label for="grauCicloSustenidos">Grau</label>
+                            <select name="grauCicloSustenidos" id="grauCicloSustenidos" class="form-control">
+                                <option value="escolha">Escolha o grau</option>
+                                <option value="0">I</option>
+                                <option value="2">II</option>
+                                <option value="4">III</option>
+                                <option value="6">IV</option>
+                                <option value="8">V</option>
+                                <option value="10">VI</option>
+                                <option value="12">VII</option>
+                            </select>
+                        </div>
+                        <!-- Botão Enviar -->
+                        <div class="py-4">
+                            <button class="button buttonTeoria" type="text" id="btnSustenidos"
+                                onclick="calcularEscalasSustenidos()">Enviar</button>
+                        </div>
+                        <!-- Resposta -->
+                        <div class="form-group my-4">
+                            <label for="resultadoInputSustenidos">Resposta</label>
+                            <input type="text" name="resultadoInputSustenidos" id="resultadoInputSustenidos"
+                                class="form-control" disabled>
+                            <!-- Botão Nova Consulta -->
+                            <div class="py-4">
+                                <button type="text" class="button buttonTeoria" onclick="limparInputs()"
+                                    id='novo2'>Novo</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="row mt-5 bg-dark text-white">
+            <div class="col-12 text-center my-5 d-flex flex-column justify-content-around align-items-center">
+                <img src="../img/total-musica.png" alt="Logo Total Música" class="img-fluid img-footer">
+
+                <h3>Aulas Particulares Especializadas</h3>
+                <h5>Escola de Música em SBC</h5>
+                <div class="pb-5">
+                    <a href="https://www.facebook.com/totalmusicaoficial" target="_blank"><i
+                            class="fab fa-facebook social-icon mx-1"></i></a>
+                    <a href="https://www.youtube.com/totalmusica" target="_blank"><i
+                            class="fab fa-youtube social-icon mx-1"></i></a>
+                    <a href="https://www.instagram.com/totalmusica" target="_blank"><i
+                            class="fab fa-instagram social-icon mx-1"></i></a>
+                </div>
+                <small>Total Música 2021 | Todos os direitos reservados</small>
+                <small>Desenvolvido por Amanda Borim</small>
+            </div>
+    </footer>
+
+    <script src="../js/jquery-3.6.0.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/script-escala-maior.js"></script>
+</body>
+
+
+</html>
