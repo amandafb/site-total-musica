@@ -59,11 +59,16 @@ a:hover {
   text-decoration: none;
   color: var(--white);
 }
+
 hr {
   height: 1px;
   margin: 50px 0;
   background-color: var(--gold);
   box-shadow: 1px 1px 1px rgb(204, 204, 204);
+}
+
+header{
+  background-color: black;
 }
 
 header div img {
@@ -110,6 +115,10 @@ nav a:hover {
 #navegacao a:hover {
   color: var(--gold);
   transition: 0.5s;
+}
+
+#link-estudo {
+background-color: rgba(146, 146, 146, 0.151);
 }
 
 /*<><><><><><> Botão Voltar ao Inicio da Página <><><><><><>*/
@@ -225,6 +234,12 @@ input[type="reset"]:hover::before {
   padding: 0;
 }
 
+/*<><><><><><> Call to action <><><><><><>*/
+
+#call-to-action{
+  background-color: black;
+}
+
 /*<><><><><><> Cards Cursos <><><><><><>*/
 .card {
   display: flex;
@@ -271,6 +286,11 @@ input[type="reset"]:hover::before {
   transition: 0.8s;
 }
 
+
+/*<><><><><><> Vídeos <><><><><><>*/
+#videos{
+  background-color: black;
+}
 /*<><><><><><> Seção Contato <><><><><><>*/
 .contact-icon {
   color: var(--gold);
@@ -307,10 +327,17 @@ input[type="reset"]:hover::before {
   background-color: transparent;
 }
 
+/*<><><><><><> Página Índice <><><><><><>*/
+
+#indice{
+  background-color: black;
+}
+
 /*<><><><><><> Footer <><><><><><>*/
 footer {
   width: 100%;
   overflow-x: hidden;
+  background-color: black;
 }
 
 .img-footer {

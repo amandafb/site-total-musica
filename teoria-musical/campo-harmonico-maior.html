@@ -19,7 +19,7 @@
     <!-- Header -->
     <header id="topo">
         <!-- Navegação -->
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-dark">
             <!-- Voltar -->
             <div c lass="col-12">
                 <a class="navbar-brand" href="indice.html" id="logo-menu">Voltar</a>
@@ -79,8 +79,8 @@
                     <form action="Post">
                         <!-- Select Campo Harmônico -->
                         <div class="form-group">
-                            <label for="lista3">Campo Harmônico</label>
-                            <select name="lista3" id="lista3" class="form-control">
+                            <label for="cicloBemois">Campo Harmônico</label>
+                            <select name="cicloBemois" id="cicloBemois" class="form-control">
                                 <option value="escolha">Escolha o Campo Harmônico</option>
                                 <option value="7">F</option>
                                 <option value="6">Bb</option>
@@ -93,8 +93,8 @@
                         </div>
                         <!-- Select Grau -->
                         <div class="form-group">
-                            <label for="lista4">Grau</label>
-                            <select name="lista4" id="lista4" class="form-control">
+                            <label for="grauCicloBemois">Grau</label>
+                            <select name="grauCicloBemois" id="grauCicloBemois" class="form-control">
                                 <option value="escolha">Escolha o grau</option>
                                 <option value="0">I</option>
                                 <option value="2">II</option>
@@ -112,24 +112,24 @@
                         </div>
                         <!-- Resultado -->
                         <div class="form-group my-4">
-                            <label for="resultado2">Resposta</label>
-                            <input type="text" name="resultado2" id="resultadoInput2" class="form-control" disabled>
+                            <label for="resultadoInputQuartas">Resposta</label>
+                            <input type="text" name="resultadoInputQuartas" id="resultadoInputQuartas" class="form-control" disabled>
                         </div>
                         <!-- Botão Mostrar Formação do Acorde -->
                         <div class="pt-4">
                             <button class="button buttonTeoria" type="text" onclick="showInputQuartas()"
-                                id="btnFormAcordes2">Ver Acorde</button>
+                                id="btnFormAcordesQuartas">Ver Acorde</button>
                         </div>
                         <!-- Formação do Acorde -->
                         <div class="form-group my-1">
                             <label for="acordeCicloQuartasInput"></label>
-                            <input type="text" name="resultado" id="acordeCicloQuartasInput" class="form-control"
+                            <input type="text" name="acordeCicloQuartasInput" id="acordeCicloQuartasInput" class="form-control"
                                 disabled style="display: none;">
                         </div>
                         <!-- Botão Nova Consulta -->
                         <div class="py-4 mt-4">
-                            <button class="button buttonTeoria" type="text" onclick="limparInputs()"
-                                id='novo2'>Novo</button>
+                            <button class="button buttonTeoria" type="text" onclick="limparInputsQuartas()"
+                                id='novoQuartas'>Novo</button>
                         </div>
                     </form>
                 </div>
@@ -140,8 +140,8 @@
                     <form action="Post">
                         <!-- Select Campo Harmônico -->
                         <div class="form-group">
-                            <label for="lista1">Campo Harmônico</label>
-                            <select name="lista1" id="lista1" class="form-control">
+                            <label for="cicloSustenidos">Campo Harmônico</label>
+                            <select name="cicloSustenidos" id="cicloSustenidos" class="form-control">
                                 <option value="escolha">Escolha o Campo Harmônico</option>
                                 <option value="1">G</option>
                                 <option value="2">D</option>
@@ -154,8 +154,8 @@
                         </div>
                         <!-- Select Grau -->
                         <div class="form-group">
-                            <label for="lista2">Grau</label>
-                            <select name="lista2" id="lista2" class="form-control">
+                            <label for="grauCicloSustenidos">Grau</label>
+                            <select name="grauCicloSustenidos" id="grauCicloSustenidos" class="form-control">
                                 <option value="escolha">Escolha o grau</option>
                                 <option value="0">I</option>
                                 <option value="2">II</option>
@@ -173,24 +173,24 @@
                         </div>
                         <!-- Resultado -->
                         <div class="form-group my-4">
-                            <label for="resultadoInput">Resposta</label>
-                            <input type="text" name="resultado" id="resultadoInput" class="form-control" disabled>
+                            <label for="resultadoInputQuintas">Resposta</label>
+                            <input type="text" name="resultadoInputQuintas" id="resultadoInputQuintas" class="form-control" disabled>
                         </div>
                         <!-- Botão Mostrar Formação do Acorde -->
                         <div class="pt-4">
                             <button class="button buttonTeoria" type="text" onclick="showInputQuintas()"
-                                id="btnFormAcordes">Ver Acorde</button>
+                                id="btnFormAcordesQuintas">Ver Acorde</button>
                         </div>
                         <!-- Formação do Acorde -->
                         <div class="form-group my-1">
                             <label for="acordeCicloQuintasInput"></label>
-                            <input type="text" name="resultado" id="acordeCicloQuintasInput" class="form-control"
+                            <input type="text" name="acordeCicloQuintasInput" id="acordeCicloQuintasInput" class="form-control"
                                 disabled style="display: none;">
                         </div>
                         <!-- Botão Nova Consulta -->
                         <div class="py-4 mt-4">
-                            <button class="button buttonTeoria" type="text" onclick="limparInputs()"
-                                id='novo'>Novo</button>
+                            <button class="button buttonTeoria" type="text" onclick="limparInputsQuintas()"
+                                id='novoQuintas'>Novo</button>
                         </div>
                     </form>
                 </div>
@@ -199,7 +199,7 @@
     </main>
  <!-- Footer -->
  <footer>
-    <div class="row mt-5 bg-dark text-white">
+    <div class="row mt-5 text-white">
         <div class="col-12 text-center my-5 d-flex flex-column justify-content-around align-items-center">
             <img src="../img/total-musica.png" alt="Logo Total Música" class="img-fluid img-footer">
 
