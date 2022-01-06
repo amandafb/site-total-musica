@@ -20,14 +20,15 @@
     <title>Total Música | Aulas Particulares Especializadas</title>
    
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/libs/bootstrap.min.css">
     <!-- Css Personalizado -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/home.css">
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
         integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous">
     </script>
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico"/>
 </head>
 
 <body>
@@ -36,7 +37,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-md navbar-dark">
             <!--Logo-->
-            <div class="col-8 col-sm-4">
+            <div class="col-8 col-sm-3">
                 <a class="navbar-brand" href="index.html" id="logo-menu">Total Música</a>
             </div>
             <!-- Botão Hamburguer -->
@@ -44,7 +45,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!--Navegação-->
-            <div class="col-sm-8 ">
+            <div class="col-sm-9">
                 <div id="navegacao" class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto align-items-center">
                         <li class="nav-item">
@@ -79,7 +80,7 @@
         </nav>
         <!-- Banner -->
         <div class="pb-5 d-flex align-items-center justify-content-center" id="banner">
-            <img src="img/banner-total-musica.png" alt="Logo Total Música" class="img-fluid">
+            <img src="assets/img/logo_total_musica.svg" alt="Logo Total Música" class="img-fluid">
         </div>
     </header>
 
@@ -87,10 +88,10 @@
     <main>
         <div class="container-fluid">
             <!-- Sobre -->
-            <div class="row my-5 mx-2" id="sobre">
+            <div class="row my-5 mx-2 px-md-5" id="sobre">
                 <!-- Imagem -->
                 <div class="col-lg-5 my-5 text-center">
-                    <img src="img/professor-de-canto-jefferson-borim.jpg" alt="Prof. Jefferson Borim" class="img-fluid">
+                    <img src="assets/img/professor-de-canto-jefferson-borim.jpg" alt="Prof. Jefferson Borim" class="img-fluid">
                 </div>
                 <!-- Texto -->
                 <div class="col-lg-7 my-5">
@@ -137,12 +138,12 @@
             </div>
 
             <!-- Cursos -->
-            <div class="row m-5">
+            <div class="row my-5 mx-md-5">
                 <div class="col-12 text-center my-5">
                     <h2>Cursos</h2>
                 </div>
                  <!-- Item Curso -->
-                <div class="col-md-4 text-center d-flex justify-content-center align-items-center py-2">
+                <div class="col-lg-4 text-center d-flex justify-content-center align-items-center py-2 mb-5">
                     <div class="card">
                         <i class="fas fa-music icon-music"></i>
                         <div class="card-body">
@@ -152,7 +153,7 @@
                     </div>
                 </div>
                   <!-- Item Curso -->
-                <div class="col-md-4 text-center d-flex justify-content-center align-items-center py-2">
+                <div class="col-lg-4 text-center d-flex justify-content-center align-items-center py-2 mb-5">
                     <div class="card">
                         <i class="fas fa-music icon-music"></i>
                         <div class="card-body">
@@ -162,7 +163,7 @@
                     </div>
                 </div>
                   <!-- Item Curso -->
-                <div class="col-md-4 text-center d-flex justify-content-center align-items-center py-2">
+                <div class="col-lg-4 text-center d-flex justify-content-center align-items-center py-2 mb-5">
                     <div class="card">
                         <i class="fas fa-music icon-music"></i>
                         <div class="card-body">
@@ -174,7 +175,7 @@
             </div>
 
             <!-- Vídeos -->
-            <div class="row my-5 p-5" id="videos">
+            <div class="row my-5 p-md-5" id="videos">
                 <div class="col-12 text-center text-white py-5">
                     <h2>Vídeos</h2>
                 </div>
@@ -232,16 +233,16 @@
                             allowfullscreen></iframe>
                     </div>
                 </div>
-                 <!-- Item Vídeo -->
-                <div class="col-12 text-center">
+                 <!-- Botão Mais Vídeos -->
+                <div class="col-12 text-center mb-5">
                     <a class="button" href="https://www.youtube.com/totalmusica" target="_blank">Mais Vídeos</a>
                 </div>
             </div>
 
             <!-- Contato -->
-            <div class="container">
-                <div class="row d-flex align-items-center" id="contato">
-                    <div class="col-md-6 py-5 shadow text-center mb-5" id="form-contato">
+            <div class="container-fluid px-md-5 mb-5">
+                <div class="row d-flex align-items-center justify-content-around" id="contato">
+                    <div class="col-md-6 off p-5 shadow text-center mb-5" id="form-contato">
                         <h2>Contato</h2>
 
                         <!-- Formulário de Contato -->
@@ -283,28 +284,28 @@
                     </div>
 
                     <!-- Informações de Contato -->
-                    <div class="col-md-6 text-center d-flex flex-column align-items-center justify-content-around mb-5">
+                    <div class="col-md-4 text-center d-flex flex-column align-items-center justify-content-around mb-5">
                         <h3>Total Música</h3>
                         <h4>Aulas Particulares Especializadas</h4>
                         <span><i class="fas fa-map-marker-alt contact-icon"></i></span>
                         <p>Centro - São Bernardo do Campo<br>Atendimento com Hora Marcada</p>
                         <span><i class="fab fa-whatsapp contact-icon"></i></span>
-                        <p>+55 11 94567-6824</p>
+                        <p><a class="contact-link" href="https://wa.me/5511945676824">+55 11 94567-6824</a></p>
                         <span><i class="far fa-envelope contact-icon"></i></span>
-                        <p>contato@totalmusica.com.br</p>
+                        <p><a class="contact-link" href="mailto:contato@totalmusica.com.br">contato@totalmusica.com.br</a></p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Seta para voltar ao inicio da página -->
-        <a href="#topo" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+        <a href="#topo" class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up"></i></a>
     </main>
 
     <!-- Footer -->
     <footer>
         <div class="row mt-5 text-white">
             <div class="col-12 text-center my-5 d-flex flex-column justify-content-around align-items-center">
-                <img src="img/total-musica.png" alt="Logo Total Música" class="img-fluid img-footer">
+                <img src="assets/img/logo_total_musica.svg" alt="Logo Total Música" class="img-fluid img-footer">
 
                 <h3>Aulas Particulares Especializadas</h3>
                 <h5>Escola de Música em SBC</h5>
@@ -321,13 +322,13 @@
             </div>
     </footer>
 
-    <script src="js/jquery-3.6.0.min.js">
+    <script src="assets/js/libs/jquery-3.6.0.min.js">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
     </script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/back-to-top.js"></script>
+    <script src="assets/js/libs/bootstrap.min.js"></script>
+    <script src="assets/js/back-to-top.js"></script>
 
 </body>
 

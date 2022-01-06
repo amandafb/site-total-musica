@@ -1,0 +1,261 @@
+/*<><><><><><> Cores <><><><><><> */
+:root {
+    --black: #000;
+    --gold: #db9736;
+    --white: #fff;
+}
+
+/*<><><><><><> Fonte <><><><><><> */
+@font-face {
+    font-family: 'fira_light';
+    src: url('../font/FiraSans-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fira_medium';
+    src: url('../font/FiraSans-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*<><><><><><> Estilo Geral <><><><><><> */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "fira_light", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    font-size: 3.6rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-variant: small-caps;
+}
+
+h5 {
+    font-family: "fira_medium";
+}
+
+ul li {
+    line-height: 40px;
+}
+
+a {
+    color: var(--gold);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--white);
+}
+
+hr {
+    height: 1px;
+    margin: 3rem 0;
+    background-color: var(--gold);
+    box-shadow: 1px 1px 1px rgb(204, 204, 204);
+}
+
+header {
+    background-color: var(--black);
+}
+
+
+/*<><><><><><> Texto Selecionado <><><><><><>*/
+::selection {
+    background: var(--gold);
+    color: var(--white);
+}
+
+/*<><><><><><> Navegação Base <><><><><><>*/
+nav {
+    font-family: "fira_light", sans-serif;
+    font-variant: small-caps;
+    font-size: 1.4rem;
+    background-color: var(--black);
+}
+
+nav a {
+    color: var(--white);
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+#logo-menu {
+    font-size: 1.6rem;
+    border: 1px solid var(--gold);
+    padding: 0 .6rem;
+}
+
+#logo-menu:hover {
+    background-color: var(--gold);
+    transition: 0.5s;
+}
+
+#navegacao a {
+    color: var(--white);
+}
+
+#navegacao a:hover {
+    color: var(--gold);
+    transition: 0.5s;
+}
+
+.contact-link{
+    color: var(--black);
+  }
+  
+  .contact-link:hover{
+    color:  var(--gold);
+  }
+
+
+/*<><><><><><> Botão Voltar ao Inicio da Página <><><><><><>*/
+.back-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    color: var(--gold);
+    display: none;
+    font-size: 1.25rem;
+    z-index: 100;
+}
+
+.back-to-top:hover {
+    color: #333;
+}
+
+/*<><><><><><> Botões <><><><><><>*/
+.button,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    font-size: 1.8rem;
+    line-height: 22px;
+    font-variant: small-caps;
+    background: transparent;
+    border: 5px solid var(--gold);
+    display: inline-block;
+    cursor: pointer;
+    color: var(--gold);
+    padding: .87rem 3rem;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    z-index: 1;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    outline: none;
+    text-align: center;
+}
+
+.button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+.button::before,
+button::before,
+input[type="button"]::before,
+input[type="submit"]::before,
+input[type="reset"]::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin: -15px 0 0 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--gold);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transform: scale3d(1, 2, 1);
+    transform: scale3d(1, 2, 1);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.9, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.9, 1);
+}
+
+.button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    color: #ffffff !important;
+    background-color: var(--gold);
+}
+
+.button:hover::before,
+button:hover::before,
+input[type="button"]:hover::before,
+input[type="submit"]:hover::before,
+input[type="reset"]:hover::before {
+    -webkit-transform: scale3d(9, 9, 1);
+    transform: scale3d(9, 9, 1);
+}
+
+/*<><><><><><> Footer <><><><><><>*/
+footer {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--black);
+  }
+  
+  .img-footer {
+    width: 20%;
+  }
+  
+  .social-icon {
+    color: var(--white);
+    font-size: 1.6rem;
+    -webkit-transition: transform 0.4s ease-in-out;
+    -moz-transition: transform 0.4s ease-in-out;
+    -o-transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    color: var(--gold);
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .img-footer {
+      width: 50%;
+    }
+  
+  }

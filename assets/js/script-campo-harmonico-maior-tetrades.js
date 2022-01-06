@@ -28,7 +28,7 @@ document.getElementById("novoQuartas").addEventListener("click", function (event
 });
 
 // oculta os botões "Ver Acorde"
-document.getElementById('btnFormAcordesQuintas').style.display = "none";
+document.getElementById('btnFormAcordesQuartas').style.display = "none";
 document.getElementById('btnFormAcordesQuintas').style.display = "none";
 
 // Função para mostrar o imput com  a formação dos acordes

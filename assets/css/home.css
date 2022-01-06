@@ -1,0 +1,125 @@
+header{
+  height: 100vh;
+}
+
+#banner {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#banner img {
+  width: 65%;
+}
+
+/*<><><><><><> Call to action <><><><><><>*/
+#call-to-action{
+  background-color: var(--black);
+}
+
+/*<><><><><><> Cards Cursos <><><><><><>*/
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  padding: 1.9rem;
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.068) !important;
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.199) !important;
+}
+
+.icon-music {
+  color: var(--gold);
+  display: block;
+  font-size: 6rem;
+  padding: 1.9rem;
+  border: 1px solid var(--gold);
+  border-radius: 100%;
+  -webkit-transition: transform 0.4s ease-in-out;
+  -moz-transition: transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+}
+
+.icon-music:hover {
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+.card-link {
+  color: var(--gold);
+  padding-top: .6rem;
+  font-variant: small-caps;
+  font-size: 1.3rem;
+}
+
+.card-link:hover {
+  color: var(--black);
+  transition: 0.8s;
+}
+
+/*<><><><><><> Vídeos <><><><><><>*/
+#videos{
+  background-color: var(--black);
+}
+
+/*<><><><><><> Seção Contato <><><><><><>*/
+.contact-icon {
+  color: var(--gold);
+  font-size: 1.6rem;
+  margin: .3rem;
+  -webkit-transition: transform 0.4s ease-in-out;
+  -moz-transition: transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+}
+
+.contact-icon:hover {
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+#contato {
+  margin-top: 6.25rem;
+}
+
+/*<><><><><><> Formulários <><><><><><>*/
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--gold);
+  border-radius: 0;
+}
+
+.input:focus {
+  border-bottom: 1px solid var(--gold);
+  box-shadow: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.068) !important;
+  background-color: transparent;
+}
+
+
+
+/*<><><><><><> Media Query <><><><><><>*/
+@media screen and (max-width: 1200px) {
+
+  header {
+    height: fit-content;
+  }
+
+  #banner img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  h2 {
+    font-size: 2rem;
+  }
+}
