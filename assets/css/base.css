@@ -113,13 +113,13 @@ nav a:hover {
     transition: 0.5s;
 }
 
-.contact-link{
+.contact-link {
     color: var(--black);
-  }
-  
-  .contact-link:hover{
-    color:  var(--gold);
-  }
+}
+
+.contact-link:hover {
+    color: var(--gold);
+}
 
 
 /*<><><><><><> Botão Voltar ao Inicio da Página <><><><><><>*/
@@ -230,32 +230,32 @@ footer {
     width: 100%;
     overflow-x: hidden;
     background-color: var(--black);
-  }
-  
-  .img-footer {
+}
+
+.img-footer {
     width: 20%;
-  }
-  
-  .social-icon {
+}
+
+.social-icon {
     color: var(--white);
     font-size: 1.6rem;
     -webkit-transition: transform 0.4s ease-in-out;
     -moz-transition: transform 0.4s ease-in-out;
     -o-transition: transform 0.4s ease-in-out;
     transition: transform 0.4s ease-in-out;
-  }
-  
-  .social-icon:hover {
+}
+
+.social-icon:hover {
     transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     color: var(--gold);
-  }
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     .img-footer {
-      width: 50%;
+        width: 50%;
     }
-  
-  }
+
+}

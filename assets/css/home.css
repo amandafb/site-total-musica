@@ -1,4 +1,4 @@
-header{
+header {
   height: 100vh;
 }
 
@@ -12,7 +12,7 @@ header{
 }
 
 /*<><><><><><> Call to action <><><><><><>*/
-#call-to-action{
+#call-to-action {
   background-color: var(--black);
 }
 
@@ -24,6 +24,7 @@ header{
   width: 350px;
   padding: 1.9rem;
   border: none;
+  background-color: #fdfdfd;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.068) !important;
 }
 
@@ -55,6 +56,7 @@ header{
   padding-top: .6rem;
   font-variant: small-caps;
   font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .card-link:hover {
@@ -63,7 +65,7 @@ header{
 }
 
 /*<><><><><><> Vídeos <><><><><><>*/
-#videos{
+#videos {
   background-color: var(--black);
 }
 
@@ -118,7 +120,7 @@ header{
 }
 
 @media screen and (max-width: 768px) {
-  
+
   h2 {
     font-size: 2rem;
   }
