@@ -1,0 +1,33 @@
+.section--dark,
+.section--dark h1,
+.section--dark h2,
+.section--dark h3,
+.section--dark h4 {
+  color: var(--white);
+}
+.section {
+  padding: var(--space-24) 0;
+}
+.section--dark {
+  background-color: var(--black);
+}
+.section--light {
+  background-color: var(--gray-50);
+}
+.section__label {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold-text);
+  margin-bottom: var(--space-4);
+}
+.section--dark .section__label {
+  color: var(--gold-text);
+}
+@media (max-width: 768px) {
+  .section {
+    padding: var(--space-16) 0;
+  }
+}

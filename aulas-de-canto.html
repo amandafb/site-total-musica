@@ -1,152 +1,499 @@
-<!Doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Aulas de Canto em SBC | Total Música</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas de Canto | Programa de Desenvolvimento Musical Individual | Total Música</title>
     <meta name="description"
-        content="Quer aprender a Cantar? Venha para a Total Música! As aulas são particulares e especializadas, com metodologia personalizada! Agende já sua entrevista!">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        content="Programa de Desenvolvimento Musical Individual em canto com o Prof. Jefferson Borim. Técnica vocal, repertório e expressão. Online e presencial. Para iniciantes e profissionais. Entrevista inicial gratuita.">
+    <link rel="canonical" href="https://totalmusica.com.br/aulas-de-canto.html">
 
-    <meta property="og:title" content="Aulas de Canto em SBC | Total Música">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="http://www.totalmusica.com.br/aulas-de-canto-em-sbc.html">
-    <meta property="og:image" content="http://totalmusica.com.br/img/logo-total-musica.png">
-    <meta property="og:site_name" content="totalmusica.com.br">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Aulas de Canto | Total Música — Prof. Jefferson Borim">
     <meta property="og:description"
-        content="Quer aprender a Cantar? Venha para a Total Música! As aulas são particulares e especializadas, com metodologia personalizada! Agende já sua entrevista!">
+        content="Programa de Desenvolvimento Musical Individual em canto. Técnica vocal completa, repertório personalizado, online e presencial. Entrevista inicial gratuita.">
+    <meta property="og:url" content="https://totalmusica.com.br/aulas-de-canto.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Total Música">
+    <meta property="og:image" content="https://totalmusica.com.br/assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Total Música - Programa de Desenvolvimento Musical Individual em Canto">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/libs/bootstrap.min.css">
-    <!-- Css Personalizado -->
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/aulas.css">
-    <!-- Font Awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
-        integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/tokens/variables.css">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+    <link rel="stylesheet" href="assets/css/layout/container.css">
+    <link rel="stylesheet" href="assets/css/layout/grid.css">
+    <link rel="stylesheet" href="assets/css/layout/section.css">
+    <link rel="stylesheet" href="assets/css/utilities/helpers.css">
+    <link rel="stylesheet" href="assets/css/components/components.css">
+    <link rel="stylesheet" href="assets/css/pages/aulas.css">
+
+
+    <!-- Schema.org - Course -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "Programa de Desenvolvimento Musical Individual — Canto",
+        "description": "Programa individual de desenvolvimento vocal com técnica completa, repertório personalizado e abordagem que integra expressão e confiança. Online e presencial.",
+        "provider": {
+            "@type": "MusicSchool",
+            "name": "Total Música",
+            "url": "https://totalmusica.com.br"
+        },
+        "instructor": {
+            "@type": "Person",
+            "name": "Jefferson Borim"
+        },
+        "courseMode": ["online", "onsite"],
+        "inLanguage": "pt-BR"
+    }
     </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://totalmusica.com.br/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Aulas de Canto",
+            "item": "https://totalmusica.com.br/aulas-de-canto.html"
+        }
+    ]
+}
+</script>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js" type="module"></script>
+</head>
 
 <body>
-    <!-- Header -->
-    <header id="topo">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark">
-            <!-- Logo -->
-            <div class="col-8 col-sm-4">
-                <a class="navbar-brand" href="index.html" id="logo-menu">Total Música</a>
-            </div>
-            <!-- Botão Hamburguer -->
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao" aria-label="Menu">
-                <span class="navbar-toggler-icon"></span>
+    <!-- Navegação -->
+    <nav class="nav" role="navigation" aria-label="Navegação principal">
+        <div class="container nav__inner">
+            <a href="/" class="nav__logo" aria-label="Total Música - Página inicial">
+                Total Música
+            </a>
+
+            <button class="nav__toggle" aria-label="Abrir menu" aria-controls="nav-menu" aria-expanded="false">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
             </button>
-            <!--Navegação-->
-            <div class="col-sm-8 ">
-                <div id="navegacao" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link ativo" href="index.html">Voltar à Home</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="aulas-de-canto.html">Aulas de Canto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="aulas-de-guitarra.html">Aulas de Guitarra</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="aulas-de-violao.html">Aulas de Violão</a>
-                        </li>
-                    </ul>
-                </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__links">
+                    <li class="nav__dropdown">
+                        <a href="#" class="nav__link nav__link--dropdown" aria-haspopup="true">Aulas</a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="aulas-de-canto.html">Canto</a></li>
+                            <li><a href="aulas-de-guitarra.html">Guitarra</a></li>
+                            <li><a href="aulas-de-violao.html">Violão</a></li>
+                            <li><a href="aulas-de-contrabaixo.html">Contrabaixo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="producao-musical.html" class="nav__link">Produção Musical</a></li>
+                    <li class="nav__dropdown">
+                        <a href="#teoria" class="nav__link nav__link--dropdown" aria-haspopup="true">Teoria Musical</a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="teoria-musical/">Ver tudo</a></li>
+                            <li><a href="teoria-musical/escala-maior.html">Escala Maior</a></li>
+                            <li><a href="teoria-musical/escala-menor.html">Escala Menor</a></li>
+                            <li><a href="teoria-musical/campo-harmonico-maior.html">Campo Harmônico Maior - Tríades</a>
+                            </li>
+                            <li><a href="teoria-musical/campo-harmonico-maior-tetrades.html">Campo Harmônico Maior -
+                                    Tétrades</a></li>
+                            <li><a href="teoria-musical/campo-harmonico-menor.html">Campo Harmônico Menor - Tríades</a>
+                            </li>
+                            <li><a href="teoria-musical/campo-harmonico-menor-tetrades.html">Campo Harmônico Menor -
+                                    Tétrades</a></li>
+                            <li><a href="teoria-musical/circulo-das-quintas.html">Circulo das Quintas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sobre.html" class="nav__link">Sobre</a></li>
+                </ul>
+                <a href="https://wa.me/5511996884384?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20entrevista%20inicial%20gratuita%20para%20aulas%20de%20canto."
+                    target="_blank" rel="noopener" class="btn btn--primary nav__cta">
+                    Agendar entrevista
+                </a>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+    <!-- Hero do Curso -->
+    <header class="course-hero">
+        <div class="container">
+            <div class="course-hero__content">
+                <p class="section__label">Programa de Desenvolvimento Musical Individual</p>
+                <h1 class="course-hero__title"><span>Canto</span></h1>
+                <p class="course-hero__subtitle">
+                    Técnica vocal, expressão e repertório personalizado.
+                    Para quem quer começar, para quem quer evoluir e para quem
+                    precisa se sentir à vontade com a própria voz.
+                </p>
+                <a href="https://wa.me/5511996884384?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20entrevista%20inicial%20gratuita%20para%20aulas%20de%20canto."
+                    target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+                    Agende sua entrevista
+                </a>
+            </div>
+        </div>
     </header>
 
-    <!-- Main -->
     <main>
-        <div class="container">
-            <div class="row my-5">
-                <div class="col-md-12">
-                    <h2>Aulas de Canto</h2>
-                    <p>As aulas de canto são especializadas para cantores profissionais e também para iniciantes.</p>
-                    <p>O curso aborda, de uma maneira totalmente direcionada os objetivos de cada aluno, assuntos como:
-                    </p>
-                    <ul>
-                        <li>Anatomia</li>
-                        <li>Fisiologia da Voz</li>
-                        <li>Técnica Vocal:
-                            <ul>
-                                <li>Técnicas de Relaxamento</li>
-                                <li>Controle Respiratório</li>
-                                <li>Emissão e Ressonância</li>
-                                <li>Técnica de Apoio</li>
-                                <li>Staccato/Legato</li>
-                                <li>Afinação</li>
-                                <li>Sustentação da Voz</li>
-                                <li>Extensão Vocal</li>
-                                <li>Definição de Vogais e Consoantes</li>
-                                <li>Finalização do Som</li>
-                                <li>Articulação</li>
-                                <li>Pronúncia e Dicção</li>
-                                <li>Mecanismo de Passagem de Voz</li>
-                                <li>Escalas e Intervalos</li>
-                                <li>Volume/Dinâmica</li>
-                                <li>Entre outros</li>
-                            </ul>
-                        </li>
-                        <li>Teoria Musical</li>
-                        <li>Técnica de Improvisação</li>
-                        <li>Estudo de Repertório Programado</li>
-                        <li>Estudo de Repertório Individual</li>
-                    </ul>
-                    <p>Nas aulas também são trabalhados os aspectos psicológicos relacionados às dificuldades de se
-                        expressar através da voz, como: timidez, insegurança, complexos, medos, etc</p>
-
-                    <p><strong>Aulas Individuais com duração de 1h/cada.</strong></p>
-                    <hr>
-                    <div class="col-md-12 text-center">
-                        <h5>Quer saber mais? Entre em contato e agende uma Aula Demonstrativa Online!</h5>
-                        <div class="d-flex flex-column align-items-center">
-                            <h5>Contato:</h5>
-                            <a class="contact-link" href="https://wa.me/5511945676824" target="_blank">(11) 94567-6824
-                                (WhatsApp)</a>
-                            <a class="contact-link"
-                                href="mailto:contato@totalmusica.com.br">contato@totalmusica.com.br</a>
-                        </div>
+        <!-- Para quem é -->
+        <section class="section" id="para-quem">
+            <div class="container">
+                <p class="section__label">Para quem é o programa</p>
+                <h2>Você se identifica?</h2>
+                <div class="grid grid--2 mt-8">
+                    <div class="profile-card">
+                        <span class="profile-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z" />
+                                <path d="M19 10v2a7 7 0 01-14 0v-2" />
+                                <line x1="12" y1="19" x2="12" y2="23" />
+                                <line x1="8" y1="23" x2="16" y2="23" />
+                            </svg>
+                        </span>
+                        <h3 class="profile-card__title">Quero aprender a cantar</h3>
+                        <p class="profile-card__text">Nunca estudou canto, mas sente vontade
+                            de desenvolver a voz e cantar com mais segurança.</p>
+                    </div>
+                    <div class="profile-card">
+                        <span class="profile-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                        </span>
+                        <h3 class="profile-card__title">Já canto e quero evoluir</h3>
+                        <p class="profile-card__text">Tem experiência mas sente que atingiu um limite.
+                            Quer aprimorar técnica, ampliar extensão e refinar a interpretação.</p>
+                    </div>
+                    <div class="profile-card">
+                        <span class="profile-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+                            </svg>
+                        </span>
+                        <h3 class="profile-card__title">Quero perder o medo de cantar</h3>
+                        <p class="profile-card__text">Gosta de música mas tem vergonha ou insegurança
+                            ao cantar. Quer trabalhar confiança e expressão em um ambiente acolhedor.</p>
+                    </div>
+                    <div class="profile-card">
+                        <span class="profile-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                                <line x1="9" y1="9" x2="9.01" y2="9" />
+                                <line x1="15" y1="9" x2="15.01" y2="9" />
+                            </svg>
+                        </span>
+                        <h3 class="profile-card__title">Canto por prazer ou na igreja</h3>
+                        <p class="profile-card__text">Canta como hobby, na igreja ou em eventos
+                            e quer melhorar a qualidade vocal, a afinação e a projeção da voz.</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Seta para voltar ao inicio da página -->
-        <a href="#topo" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+        </section>
+
+        <!-- O que você vai aprender -->
+        <section class="section section--light" id="conteudo">
+            <div class="container">
+                <p class="section__label">Conteúdo do programa</p>
+                <h2>O que você vai aprender</h2>
+                <div class="grid grid--3 mt-8">
+                    <div class="detail-block">
+                        <h3 class="detail-block__title">Técnica Vocal</h3>
+                        <p class="detail-block__text">
+                            Controle respiratório, técnica de apoio, emissão e ressonância,
+                            extensão vocal, sustentação da voz, staccato e legato, mecanismo
+                            de passagem de voz e dinâmica vocal.
+                        </p>
+                    </div>
+                    <div class="detail-block">
+                        <h3 class="detail-block__title">Anatomia e Fisiologia da Voz</h3>
+                        <p class="detail-block__text">
+                            Entender como a voz funciona é parte fundamental do aprendizado.
+                            Conhecer o aparelho vocal ajuda a proteger a saúde da voz
+                            e a usar o corpo como instrumento de forma consciente.
+                        </p>
+                    </div>
+                    <div class="detail-block">
+                        <h3 class="detail-block__title">Afinação e Percepção</h3>
+                        <p class="detail-block__text">
+                            Desenvolvimento do ouvido musical, trabalho com escalas e intervalos,
+                            afinação precisa e percepção de nuances melódicas e harmônicas.
+                        </p>
+                    </div>
+                    <div class="detail-block">
+                        <h3 class="detail-block__title">Articulação e Dicção</h3>
+                        <p class="detail-block__text">
+                            Definição de vogais e consoantes, pronúncia, dicção e
+                            finalização do som. Clareza na comunicação vocal em qualquer estilo.
+                        </p>
+                    </div>
+                    <div class="detail-block">
+                        <h3 class="detail-block__title">Expressão e Interpretação</h3>
+                        <p class="detail-block__text">
+                            Técnicas de improvisação, dinâmica, volume e os aspectos emocionais
+                            de se expressar através da voz. Confiança, desenvoltura e presença.
+                        </p>
+                    </div>
+                    <div class="detail-block">
+                        <h3 class="detail-block__title">Repertório e Teoria</h3>
+                        <p class="detail-block__text">
+                            Estudo de repertório programado e individual, escolhido com o aluno.
+                            Teoria musical aplicada ao canto: leitura, harmonia, estrutura das músicas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como funciona -->
+        <section class="section" id="como-funciona">
+            <div class="container">
+                <p class="section__label">Informações práticas</p>
+                <h2>Como funciona</h2>
+                <div class="grid grid--2 mt-8">
+                    <div class="info-item">
+                        <h3 class="info-item__title">Formato Online</h3>
+                        <p class="info-item__text">Encontros individuais de 1 hora ao vivo via Microsoft Teams,
+                            com dia e horário fixos. Nada de aula gravada — é você e o professor.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3 class="info-item__title">Formato Presencial</h3>
+                        <p class="info-item__text">Encontros individuais de 1 hora em estúdio parceiro,
+                            no bairro Nova Petrópolis, em São Bernardo do Campo. O endereço é compartilhado
+                            no agendamento.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3 class="info-item__title">Frequência e acompanhamento</h3>
+                        <p class="info-item__text">1 encontro por semana, com dia e horário fixos.
+                            Entre os encontros, acompanhamento direto via WhatsApp para dúvidas,
+                            orientações e suporte.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3 class="info-item__title">Primeiro passo</h3>
+                        <p class="info-item__text">Uma conversa online de 15 a 30 minutos, sem custo,
+                            para entender seu momento atual, seus objetivos e expectativas. A partir daí,
+                            o Prof. Jefferson indica o melhor caminho para o seu desenvolvimento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section section--light" id="faq">
+            <div class="container container--narrow">
+                <p class="section__label">Perguntas frequentes</p>
+                <h2>Dúvidas sobre as aulas de canto</h2>
+                <div class="faq__list">
+                    <details class="faq__item">
+                        <summary class="faq__question">Preciso ter experiência prévia para fazer aulas de canto?
+                        </summary>
+                        <p class="faq__answer">Não. As aulas são adaptadas ao nível de cada aluno,
+                            do iniciante ao avançado. A entrevista inicial serve justamente para
+                            entender o seu momento e montar um plano adequado.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">Como funciona o formato online? Dá para aprender de verdade?
+                        </summary>
+                        <p class="faq__answer">Sim. Os encontros são ao vivo, individuais, com retorno em tempo real.
+                            O Prof. Jefferson atende alunos online há mais de 5 anos, incluindo alunos fora do Brasil,
+                            e o desenvolvimento vocal nesse formato é equivalente ao presencial.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">Tenho vergonha de cantar. As aulas me ajudam com isso?</summary>
+                        <p class="faq__answer">Essa é uma das questões mais comuns. As aulas trabalham não só
+                            a técnica, mas também a confiança e a expressão. O programa é individual e acolhedor,
+                            sem julgamento. Muitos alunos chegam com essa mesma insegurança e evoluem bastante.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">Posso escolher o repertório que vou estudar?</summary>
+                        <p class="faq__answer">Sim. O repertório é sempre construído a partir das preferências do aluno.
+                            O professor sugere músicas que complementam o aprendizado técnico, mas o ponto de partida é
+                            sempre o que você gosta de ouvir e quer aprender a cantar.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">As aulas servem para quem quer seguir carreira como cantor(a)?
+                        </summary>
+                        <p class="faq__answer">Sim. O Prof. Jefferson já formou alunos que hoje são
+                            profissionais — cantores, professores de música, locutores. O nível da
+                            aula acompanha o objetivo do aluno, seja hobby ou carreira.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="section section--dark" id="contato">
+            <div class="container cta-final">
+                <p class="section__label">Comece agora</p>
+                <h2 class="cta-final__title">Pronto para começar?</h2>
+                <p class="cta-final__text">
+                    Agende uma entrevista inicial gratuita pelo WhatsApp. Fale direto com o professor.
+                </p>
+                <a href="https://wa.me/5511996884384?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20entrevista%20inicial%20gratuita%20para%20aulas%20de%20canto."
+                    target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg">
+                    <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 2.127.556 4.122 1.528 5.854L0 24l6.335-1.495A11.932 11.932 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.97 0-3.84-.53-5.46-1.511l-.39-.234-4.052.956.99-3.9-.256-.406A9.698 9.698 0 012.25 12 9.75 9.75 0 0112 2.25 9.75 9.75 0 0121.75 12 9.75 9.75 0 0112 21.75z" />
+                    </svg>
+                    Falar no WhatsApp
+                </a>
+                <span class="cta-final__email">
+                    ou envie um e-mail para <a href="mailto:contato@totalmusica.com.br">contato@totalmusica.com.br</a>
+                </span>
+            </div>
+        </section>
+
+        <!-- Outros cursos -->
+        <section class="section" id="outros-cursos">
+            <div class="container">
+                <p class="section__label">Veja também</p>
+                <h2>Outros instrumentos</h2>
+                <div class="grid grid--3 mt-8">
+                    <a href="aulas-de-guitarra.html" class="card">
+                        <h3 class="card__title">Aulas de Guitarra</h3>
+                        <p class="card__text">Rock, blues, jazz, metal. Técnica, teoria e improvisação.</p>
+                        <span class="card__link">Saiba mais <span aria-hidden="true">→</span></span>
+                    </a>
+                    <a href="aulas-de-violao.html" class="card">
+                        <h3 class="card__title">Aulas de Violão</h3>
+                        <p class="card__text">Popular, erudito, fingerstyle. Teoria e prática integradas.</p>
+                        <span class="card__link">Saiba mais <span aria-hidden="true">→</span></span>
+                    </a>
+                    <a href="aulas-de-contrabaixo.html" class="card">
+                        <h3 class="card__title">Aulas de Contrabaixo</h3>
+                        <p class="card__text">Contrabaixo elétrico para todos os níveis. Técnica e repertório.</p>
+                        <span class="card__link">Saiba mais <span aria-hidden="true">→</span></span>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="row mt-5 text-white">
-            <div class="col-12 text-center my-5 d-flex flex-column justify-content-around align-items-center">
-                <img src="assets/img/logo_total_musica.svg" alt="Logo Total Música" class="img-fluid img-footer">
-
-                <h4>Aulas Particulares Especializadas</h4>
-                <h5>Escola de Música em SBC</h5>
-                <div class="pb-5">
-                    <a href="https://www.facebook.com/totalmusicaoficial" target="_blank" title="Página do Facebook da Total Música"><i
-                            class="fab fa-facebook social-icon mx-1" alt=""></i></a>
-                    <a href="https://www.youtube.com/totalmusica" target="_blank" title="Canal no Youtube da Total Música"><i
-                            class="fab fa-youtube social-icon mx-1"></i></a>
-                    <a href="https://www.instagram.com/totalmusica" target="_blank" title="Perfil no Instagram da Total Música"><i
-                            class="fab fa-instagram social-icon mx-1"></i></a>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <a href="/" class="footer__brand" aria-label="Total Música - Página inicial">
+                        Total Música
+                    </a>
+                    <p class="footer__brand-text">
+                        Fundada em 2016 pelo Prof. Jefferson Borim.
+                        Programa de Desenvolvimento Musical Individual em canto, guitarra, violão e contrabaixo —
+                        online e presencial. Gravação e produção musical.
+                    </p>
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com/totalmusica" target="_blank" rel="noopener"
+                            class="footer__social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/totalmusica" target="_blank" rel="noopener"
+                            class="footer__social-link" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z" />
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/totalmusicaoficial" target="_blank" rel="noopener"
+                            class="footer__social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <small>Total Música 2021 | Todos os direitos reservados</small>
-                <small>Desenvolvido por Amanda Borim</small>
+                <div>
+                    <h4 class="footer__heading">Aulas</h4>
+                    <ul class="footer__links">
+                        <li><a href="aulas-de-canto.html">Canto</a></li>
+                        <li><a href="aulas-de-guitarra.html">Guitarra</a></li>
+                        <li><a href="aulas-de-violao.html">Violão</a></li>
+                        <li><a href="aulas-de-contrabaixo.html">Contrabaixo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Serviços</h4>
+                    <ul class="footer__links">
+                        <li><a href="producao-musical.html">Produção Musical e Gravação</a></li>
+                    </ul>
+                    <h4 class="footer__heading" style="margin-top: var(--space-6);">Conteúdo</h4>
+                    <ul class="footer__links">
+                        <li><a href="teoria-musical/">Teoria Musical</a></li>
+                        <li><a href="sobre.html">Sobre o Professor</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Contato</h4>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://wa.me/5511996884384" target="_blank" rel="noopener">
+                                (11) 99688-4384
+                            </a>
+                        </li>
+                        <li><a href="mailto:contato@totalmusica.com.br">contato@totalmusica.com.br</a></li>
+                        <li style="color: var(--gray-400);">São Bernardo do Campo, SP</li>
+                    </ul>
+                </div>
             </div>
+            <div class="footer__bottom">
+                <small>Total Música &copy; 2016–2026 · Todos os direitos reservados</small>
+                <small> · Desenvolvido por Amanda Borim</small>
+            </div>
+        </div>
     </footer>
 
-    <script src="assets/js/libs/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="assets/js/libs/bootstrap.min.js"></script>
-    <script src="assets/js/back-to-top.js"></script>
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5511996884384?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20de%20canto."
+        target="_blank" rel="noopener" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+        <svg viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            <path
+                d="M12 0C5.373 0 0 5.373 0 12c0 2.127.556 4.122 1.528 5.854L0 24l6.335-1.495A11.932 11.932 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.97 0-3.84-.53-5.46-1.511l-.39-.234-4.052.956.99-3.9-.256-.406A9.698 9.698 0 012.25 12 9.75 9.75 0 0112 2.25 9.75 9.75 0 0121.75 12 9.75 9.75 0 0112 21.75z" />
+        </svg>
+    </a>
 </body>
 
 </html>

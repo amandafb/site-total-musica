@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://totalmusica.com.br/sitemap.xml

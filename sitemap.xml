@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Páginas principais -->
+  <url>
+    <loc>https://totalmusica.com.br/</loc>
+  </url>
+  <url>
+    <loc>https://totalmusica.com.br/sobre.html</loc>
+  </url>
+  <url>
+    <loc>https://totalmusica.com.br/producao-musical.html</loc>
+  </url>
+
+  <!-- Aulas -->
+  <url>
+    <loc>https://totalmusica.com.br/aulas-de-canto.html</loc>
+  </url>
+  <url>
+    <loc>https://totalmusica.com.br/aulas-de-guitarra.html</loc>
+  </url>
+  <url>
+    <loc>https://totalmusica.com.br/aulas-de-violao.html</loc>
+  </url>
+  <url>
+    <loc>https://totalmusica.com.br/aulas-de-contrabaixo.html</loc>
+  </url>
+
+  <!-- Teoria Musical -->
+  <url>
+    <loc>https://totalmusica.com.br/teoria-musical/</loc>
+  </url>
+  <url>
+    <loc>https://totalmusica.com.br/teoria-musical/escala-maior.html</loc>
+  </url>
+  <url>
+    <loc>https://totalmusica.com.br/teoria-musical/escala-menor.html</loc>
+  </url>
+  <url>
+    <loc>https://totalmusica.com.br/teoria-musical/campo-harmonico-maior.html</loc>
+  </url>
+  <url>
+    <loc>https://totalmusica.com.br/teoria-musical/campo-harmonico-maior-tetrades.html</loc>
+  </url>
+  <url>
+    <loc>https://totalmusica.com.br/teoria-musical/campo-harmonico-menor.html</loc>
+  </url>
+  <url>
+    <loc>https://totalmusica.com.br/teoria-musical/campo-harmonico-menor-tetrades.html</loc>
+  </url>
+  <url>
+    <loc>https://totalmusica.com.br/teoria-musical/circulo-das-quintas.html</loc>
+  </url>
+
+</urlset>

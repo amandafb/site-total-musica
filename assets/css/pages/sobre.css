@@ -1,0 +1,48 @@
+.about-intro__grid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+.about-intro__photo {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  filter: grayscale(15%);
+}
+.about-intro__text {
+  max-width: 640px;
+}
+.about-intro__text p {
+  font-size: var(--text-base);
+  color: var(--gray-500);
+  line-height: 1.8;
+  margin-bottom: var(--space-6);
+}
+.about-intro__text p:first-of-type {
+  font-size: var(--text-lg);
+  color: var(--gray-900);
+}
+@media (max-width: 1024px) {
+  .about-intro__grid {
+    grid-template-columns: 300px 1fr;
+    gap: var(--space-8);
+  }
+}
+@media (max-width: 768px) {
+  .about-intro__grid {
+    grid-template-columns: 1fr;
+  }
+  .about-intro__photo {
+    max-width: 320px;
+    aspect-ratio: 1/1;
+    margin: 0 auto var(--space-8);
+  }
+}
+.about-instruments__subtitle {
+  font-size: var(--text-base);
+  color: var(--gray-500);
+  margin-bottom: var(--space-10);
+  max-width: 540px;
+}

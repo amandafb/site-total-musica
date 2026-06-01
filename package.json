@@ -1,0 +1,25 @@
+{
+  "name": "site-total-musica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandafb/site-total-musica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amandafb/site-total-musica/issues"
+  },
+  "homepage": "https://github.com/amandafb/site-total-musica#readme",
+  "devDependencies": {
+    "vite": "^8.0.14"
+  }
+}

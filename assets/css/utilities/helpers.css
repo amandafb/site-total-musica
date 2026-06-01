@@ -1,0 +1,26 @@
+.text-center {
+  text-align: center;
+}
+.text-gold {
+  color: var(--gold);
+}
+.text-muted {
+  color: var(--gray-500);
+}
+.mt-8 {
+  margin-top: var(--space-8);
+}
+.mt-10 {
+  margin-top: var(--space-10);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

@@ -1,340 +1,474 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Música | Programa de Desenvolvimento Musical Individual — Prof. Jefferson Borim</title>
     <meta name="description"
-        content="Aulas de Canto, Guitarra e Violão em SBC. Aulas Particulares e Especializadas com o Profº Jefferson Borim. Mais de 20 anos de experiência! ">
-    <meta sameAs="https://www.facebook.com/totalmusicaoficial">
-    <meta sameAs="https://www.youtube.com/totalmusica">
-    <meta sameAs="https://www.instagram.com/totalmusica/">
-    <meta property="og:title" content="Total Música | Aulas Particulares Especializadas | Escola de Música em SBC">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="http://www.totalmusica.com.br">
-    <meta property="og:image" content="http://totalmusica.com.br/img/logo-total-musica.png">
-    <meta property="og:site_name" content="totalmusica.com.br">
+        content="Programa de Desenvolvimento Musical Individual com o Prof. Jefferson Borim — canto, guitarra, violão e contrabaixo. Online e presencial. Método próprio, 30 anos de experiência. Gravação e produção musical. Agende sua entrevista inicial gratuita.">
+    <link rel="canonical" href="https://totalmusica.com.br/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Total Música | Programa de Desenvolvimento Musical Individual">
     <meta property="og:description"
-        content="Aulas de Canto, Guitarra e Violão em SBC. Aulas Particulares e Especializadas com o Profº Jefferson Borim. Mais de 20 anos de experiência!">
-    <title>Total Música | Aulas Particulares Especializadas</title>
-   
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/libs/bootstrap.min.css">
-    <!-- Css Personalizado -->
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/home.css">
-    <!-- Font Awesome -->
-    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
-        integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous">
+        content="Canto, guitarra, violão e contrabaixo com o Prof. Jefferson Borim. Online e presencial. 30 anos de experiência, método próprio.">
+    <meta property="og:url" content="https://totalmusica.com.br/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Total Música">
+    <meta property="og:image" content="https://totalmusica.com.br/assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Total Música - Programa de Desenvolvimento Musical Individual">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/tokens/variables.css">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+    <link rel="stylesheet" href="assets/css/layout/container.css">
+    <link rel="stylesheet" href="assets/css/layout/grid.css">
+    <link rel="stylesheet" href="assets/css/layout/section.css">
+    <link rel="stylesheet" href="assets/css/utilities/helpers.css">
+    <link rel="stylesheet" href="assets/css/components/components.css">
+    <link rel="stylesheet" href="assets/css/pages/home.css">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MusicSchool",
+        "name": "Total Música",
+        "description": "Programa de Desenvolvimento Musical Individual em canto, guitarra, violão e contrabaixo. Online e presencial. Gravação e produção musical.",
+        "url": "https://totalmusica.com.br",
+        "telephone": "+5511996884384",
+        "email": "contato@totalmusica.com.br",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "São Bernardo do Campo",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Jefferson Borim",
+            "jobTitle": "Professor de Música"
+        },
+        "foundingDate": "2016",
+        "sameAs": [
+            "https://www.instagram.com/totalmusica",
+            "https://www.youtube.com/totalmusica",
+            "https://www.facebook.com/totalmusicaoficial"
+        ]
+    }
     </script>
-    <link rel="shortcut icon" href="assets/img/favicon.ico"/>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://totalmusica.com.br/"
+        },
+    ]
+}
+</script>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js" type="module"></script>
 </head>
 
 <body>
-    <!-- Header -->
-    <header id="topo">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark">
-            <!--Logo-->
-            <div class="col-8 col-sm-3">
-                <a class="navbar-brand" href="index.html" id="logo-menu">Total Música</a>
-            </div>
-            <!-- Botão Hamburguer -->
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao" aria-label="Menu">
-                <span class="navbar-toggler-icon"></span>
+    <!-- Navegação -->
+    <nav class="nav" role="navigation" aria-label="Navegação principal">
+        <div class="container nav__inner">
+            <a href="/" class="nav__logo" aria-label="Total Música - Página inicial">
+                Total Música
+            </a>
+
+            <button class="nav__toggle" aria-label="Abrir menu" aria-controls="nav-menu" aria-expanded="false">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
             </button>
-            <!--Navegação-->
-            <div class="col-sm-9">
-                <div id="navegacao" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link ativo" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sobre">Sobre</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Cursos
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item text-dark" href="aulas-de-canto.html">Aulas de Canto</a>
-                                <a class="dropdown-item text-dark" href="aulas-de-guitarra.html">Aulas de Guitarra</a>
-                                <a class="dropdown-item text-dark" href="aulas-de-violao.html">Aulas de Violão</a>
-                            </div>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="#videos">Vídeos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contato">Contato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="link-estudo" href="teoria-musical/indice.html">Estudos</a>
-                        </li>
-                    </ul>
-                </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__links">
+                    <li class="nav__dropdown">
+                        <a href="#aulas" class="nav__link nav__link--dropdown" aria-haspopup="true">Aulas</a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="aulas-de-canto.html">Canto</a></li>
+                            <li><a href="aulas-de-guitarra.html">Guitarra</a></li>
+                            <li><a href="aulas-de-violao.html">Violão</a></li>
+                            <li><a href="aulas-de-contrabaixo.html">Contrabaixo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="producao-musical.html" class="nav__link">Produção Musical</a></li>
+                    <li class="nav__dropdown">
+                        <a href="#teoria" class="nav__link nav__link--dropdown" aria-haspopup="true">Teoria Musical</a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="teoria-musical/">Ver tudo</a></li>
+                            <li><a href="teoria-musical/escala-maior.html">Escala Maior</a></li>
+                            <li><a href="teoria-musical/escala-menor.html">Escala Menor</a></li>
+                            <li><a href="teoria-musical/campo-harmonico-maior.html">Campo Harmônico Maior - Tríades</a>
+                            </li>
+                            <li><a href="teoria-musical/campo-harmonico-maior-tetrades.html">Campo Harmônico Maior -
+                                    Tétrades</a></li>
+                            <li><a href="teoria-musical/campo-harmonico-menor.html">Campo Harmônico Menor - Tríades</a>
+                            </li>
+                            <li><a href="teoria-musical/campo-harmonico-menor-tetrades.html">Campo Harmônico Menor -
+                                    Tétrades</a></li>
+                            <li><a href="teoria-musical/circulo-das-quintas.html">Circulo das Quintas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sobre.html" class="nav__link">Sobre</a></li>
+                </ul>
+                <a href="https://wa.me/5511996884384?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20entrevista%20inicial%20gratuita."
+                    target="_blank" rel="noopener" class="btn btn--primary nav__cta">
+                    Agendar entrevista
+                </a>
             </div>
-        </nav>
-        <!-- Banner -->
-        <div class="pb-5 d-flex align-items-center justify-content-center" id="banner">
-            <img src="assets/img/logo_total_musica.svg" alt="Logo Total Música" class="img-fluid">
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="container hero__content">
+            <img src="assets/img/logo_total_musica.webp" alt="Total Música" class="hero__logo" width="200" height="200"
+                loading="eager">
+
+            <h1 class="hero__title">
+                Onde a técnica encontra
+                <span>a sensibilidade</span>
+            </h1>
+
+            <p class="hero__subtitle">
+                Programa de Desenvolvimento Musical Individual em canto, guitarra, violão e contrabaixo,
+                conduzido pelo Prof. Jefferson Borim. Mais de 30 anos de experiência,
+                método próprio e abordagem que vai além da música.
+            </p>
+
+            <div class="hero__cta">
+                <a href="https://wa.me/5511996884384?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20entrevista%20inicial%20gratuita."
+                    target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+                    Agende sua entrevista inicial gratuita
+                </a>
+            </div>
+        </div>
         </div>
     </header>
 
-    <!-- Main -->
     <main>
-        <div class="container-fluid">
-            <!-- Sobre -->
-            <div class="row my-5 mx-2 px-md-5" id="sobre">
-                <!-- Imagem -->
-                <div class="col-lg-5 my-5 text-center">
-                    <img src="assets/img/professor-de-canto-jefferson-borim.jpg" alt="Prof. Jefferson Borim" class="img-fluid">
+        <!-- Diferenciais -->
+        <section class="section" id="diferenciais">
+            <div class="container">
+                <div class="text-center">
+                    <p class="section__label">Por que a Total Música</p>
+                    <h2>O que faz a diferença no nosso programa</h2>
                 </div>
-                <!-- Texto -->
-                <div class="col-lg-7 my-5">
-                    <h1>Profº Jefferson Borim</h1>
-                    <p class="text-justify">Professor de Música há mais de 25 anos, Jefferson Borim desenvolveu
-                        habilidades
-                        como Cantor e em
-                        diversos instrumentos de cordas, tais como: Guitarra, Violão, Contrabaixo e Viola 10 cordas.</p>
-                    <p class="text-justify">Iniciou seus estudos musicais aos 12 anos, quando já havia perdido
-                        totalmente a
-                        visão devido à um
-                        Glaucoma Congênito. Aos 16 anos começou sua carreira como professor, dando aulas particulares.</p>
-                    <p class="text-justify">No meio musical participou de vários projetos com bandas de diversos estilos
-                        como: Pop Rock, Classic
-                        Rock e Heavy Metal. Acompanhou Duplas Sertanejas, bandas de eventos (formaturas, casamentos,
-                        etc) e
-                        realizou trabalhos autorais e gravações em estúdio.</p>
-                    <p class="text-justify">Foi proprietário e diretor do Espaço Musical Central Art por 12 anos, onde
-                        além
-                        de gerenciar a
-                        escola, era responsável por diversos projetos como: Coral, Audição, Prática de Banda, Workshops,
-                        Criação de Bandas de alunos, entre outros. Também foi Diretor Musical e Arranjador da banda para
-                        cerimônias e festas de casamento Banda TOP.</p>
-                    <p class="text-justify">Ao longo de sua carreira, o Profº Jefferson Borim desenvolveu um método
-                        didático
-                        próprio,
-                        especializado em Aulas de Canto, Guitarra e Violão.</p>
-                    <p class="text-justify">Com o novo projeto Total Música, busca alunos interessados em aprender
-                        música de
-                        forma efetiva e
-                        ampla, visando a qualidade das matérias abordadas e a intensa prática musical.</p>
-                    <h2 class="text-right">Conheça a Total Música!</h2>
-                </div>
-            </div>
-
-            <!-- Call to Action -->
-            <div class="row" id="call-to-action">
-                <div class="col-12 p-5 text-white text-center d-flex flex-column flex-sm-row justify-content-around align-items-center"
-                    id="callToAction">
-                    <h2>Aulas Presenciais e Online</h2>
-                    <a class="button" href="#contato">Saiba Mais</a>
-                </div>
-            </div>
-
-            <!-- Cursos -->
-            <div class="row my-5 mx-md-5">
-                <div class="col-12 text-center my-5">
-                    <h2>Cursos</h2>
-                </div>
-                 <!-- Item Curso -->
-                <div class="col-lg-4 text-center d-flex justify-content-center align-items-center py-2 mb-5">
-                    <div class="card">
-                        <i class="fas fa-music icon-music"></i>
-                        <div class="card-body">
-                            <h3>Aulas de Canto</h3>
-                            <a class="card-link" href="aulas-de-canto.html">Saiba Mais</a>
+                <div class="differentials">
+                    <div class="differential">
+                        <div class="differential__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
                         </div>
+                        <h3 class="differential__title">30 anos de ensino</h3>
+                        <p class="differential__text">Professor desde 1995, com passagem por escolas, bandas de diversos
+                            estilos e acompanhamento de alunos em estúdio. Uma vivência musical ampla que se reflete
+                            diretamente na qualidade das aulas.</p>
                     </div>
-                </div>
-                  <!-- Item Curso -->
-                <div class="col-lg-4 text-center d-flex justify-content-center align-items-center py-2 mb-5">
-                    <div class="card">
-                        <i class="fas fa-music icon-music"></i>
-                        <div class="card-body">
-                            <h3>Aulas de Guitarra</h3>
-                            <a class="card-link" href="aulas-de-guitarra.html">Saiba Mais</a>
+                    <div class="differential">
+                        <div class="differential__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" />
+                                <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" />
+                            </svg>
                         </div>
+                        <h3 class="differential__title">Desenvolvimento sob medida</h3>
+                        <p class="differential__text">Nada de turma, nada de conteúdo engessado.
+                            O programa é construído a partir dos objetivos, do ritmo e do repertório
+                            de cada aluno — e evolui junto com ele.</p>
                     </div>
-                </div>
-                  <!-- Item Curso -->
-                <div class="col-lg-4 text-center d-flex justify-content-center align-items-center py-2 mb-5">
-                    <div class="card">
-                        <i class="fas fa-music icon-music"></i>
-                        <div class="card-body">
-                            <h3>Aulas de Violão</h3>
-                            <a class="card-link" href="aulas-de-violao.html">Saiba Mais</a>
+                    <div class="differential">
+                        <div class="differential__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 00-3-3.87" />
+                                <path d="M16 3.13a4 4 0 010 7.75" />
+                            </svg>
                         </div>
+                        <h3 class="differential__title">Mais do que técnica</h3>
+                        <p class="differential__text">Música é expressão. O programa considera não só a parte
+                            técnica, mas também a confiança, a desenvoltura e o que cada aluno precisa
+                            para se sentir à vontade com o instrumento ou com a voz.</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Vídeos -->
-            <div class="row my-5 p-md-5" id="videos">
-                <div class="col-12 text-center text-white py-5">
-                    <h2>Vídeos</h2>
-                </div>
-                <!-- Item Vídeo -->
-                <div class="col-md-4 pb-5">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RJWaAe3yQjI"
-                            frameborder="0"
-                            loading="lazy"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen title="Altar Particular (Maria Gadú) - Profº Jefferson Borim e Giuliano Bonetti"></iframe>
-                    </div>
-                </div>
-                 <!-- Item Vídeo -->
-                <div class="col-md-4 pb-5">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qscLfGSeGlk"
-                            frameborder="0"
-                            loading="lazy"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen title="Marcela Estelië - Change (Lana Del Rey) - Total Música em Estúdio 2018"></iframe>
-                    </div>
-                </div>
-                 <!-- Item Vídeo -->
-                <div class="col-md-4 pb-5">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YXcdKK3YMnU"
-                            frameborder="0"
-                            loading="lazy"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen title="Rafael Maccheronio - Me And Mrs. Jones (Michael Bublé) - Total Música Ao Vivo 2018"></iframe>
-                    </div>
-                </div>
-                 <!-- Item Vídeo -->
-                <div class="col-md-4 pb-5">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EGKgLURHAgg"
-                            frameborder="0"
-                            loading="lazy"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen title="Total Música Pocket Show - Bruna Molon Grotti "Eles por Ela""></iframe>
-                    </div>
-                </div>
-                 <!-- Item Vídeo -->
-                <div class="col-md-4 pb-5">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J0tPiEd6I1M"
-                            frameborder="0"
-                            loading="lazy"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen title="Cover Something in the Way (Jorja Smith) - Profº Jefferson Borim e Giovana Alves"></iframe>
-                    </div>
-                </div>
-                 <!-- Item Vídeo -->
-                <div class="col-md-4 pb-5">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rcyfWlNhA-k"
-                            frameborder="0"
-                            loading="lazy"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen title="Amanda Borim - I Guess That's Why They Call It The Blues (Elton John) | Total Música Ao Vivo 2019"></iframe>
-                    </div>
-                </div>
-                 <!-- Botão Mais Vídeos -->
-                <div class="col-12 text-center mb-5">
-                    <a class="button" href="https://www.youtube.com/totalmusica" target="_blank">Mais Vídeos</a>
+        <!-- Aulas -->
+        <section class="section section--light" id="aulas">
+            <div class="container">
+                <p class="section__label">Programa de Desenvolvimento Musical Individual</p>
+                <h2>Escolha seu instrumento</h2>
+                <div class="grid grid--2 mt-8">
+                    <a href="aulas-de-canto.html" class="card">
+                        <h3 class="card__title">Aulas de Canto</h3>
+                        <p class="card__text">Técnica vocal completa: respiração, apoio, ressonância, extensão vocal,
+                            repertório. Para iniciantes e profissionais. Abordagem que inclui aspectos psicológicos da
+                            expressão vocal.</p>
+                        <span class="card__link">Saiba mais <span aria-hidden="true">→</span></span>
+                    </a>
+                    <a href="aulas-de-guitarra.html" class="card">
+                        <h3 class="card__title">Aulas de Guitarra</h3>
+                        <p class="card__text">Rock, blues, jazz, metal e mais. Técnica, teoria musical, escalas,
+                            improvisação, modos gregos e análise harmônica. Do iniciante ao avançado.</p>
+                        <span class="card__link">Saiba mais <span aria-hidden="true">→</span></span>
+                    </a>
+                    <a href="aulas-de-violao.html" class="card">
+                        <h3 class="card__title">Aulas de Violão</h3>
+                        <p class="card__text">Técnica, harmonia e repertório personalizado. Para quem quer se
+                            acompanhar, solar ou evoluir no instrumento.</p>
+                        <span class="card__link">Saiba mais <span aria-hidden="true">→</span></span>
+                    </a>
+                    <a href="aulas-de-contrabaixo.html" class="card">
+                        <h3 class="card__title">Aulas de Contrabaixo</h3>
+                        <p class="card__text">Contrabaixo elétrico para todos os níveis. Técnica, grooves,
+                            linhas de baixo, slap, teoria aplicada e repertório diversificado.</p>
+                        <span class="card__link">Saiba mais <span aria-hidden="true">→</span></span>
+                    </a>
                 </div>
             </div>
+        </section>
 
-            <!-- Contato -->
-            <div class="container-fluid px-md-5 mb-5">
-                <div class="row d-flex align-items-center justify-content-around" id="contato">
-                    <div class="col-md-6 off p-5 shadow text-center mb-5" id="form-contato">
-                        <h2>Contato</h2>
-
-                        <!-- Formulário de Contato -->
-                        <form action="contact-form.php" id="contact-form" method="Post">
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label class="sr-only" for="nome">Nome</label>
-                                    <input type="text" name="nome" class='form-control input' id="nome"
-                                        placeholder="Nome" required
-                                        onkeypress="return event.charCode< 48 || event.charCode > 57">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label class="sr-only" for="email">Email</label>
-                                    <input type="email" name="email" id="email" class='form-control input'
-                                        placeholder="E-mail" required onblur="validaEmail(this)"
-                                        oninput="this.value=this.value.toLowerCase()">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label class="sr-only" for="tel">Telefone: </label>
-                                    <input class="form-control input" type="tel" name="tel" id="tel" maxlength="11"
-                                        placeholder="Telefone (Somente números)"
-                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label class="sr-only" for="assunto">Assunto</label>
-                                    <input class="form-control input" type="text" placeholder="Assunto" id="assunto" name="assunto"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="mensagem">Mensagem</label>
-                                <textarea class="form-control input" type="text" placeholder="Mensagem" id="mensagem" name="mensagem"
-                                    required onblur="validaMensagem(this)"></textarea>
-                            </div>
-                            <button class="button mt-3" type="submit">Enviar</button>
-                        </form>
-                    </div>
-
-                    <!-- Informações de Contato -->
-                    <div class="col-md-4 text-center d-flex flex-column align-items-center justify-content-around mb-5">
-                        <h3>Total Música</h3>
-                        <h4>Aulas Particulares Especializadas</h4>
-                        <span><i class="fas fa-map-marker-alt contact-icon"></i></span>
-                        <p>Centro - São Bernardo do Campo<br>Atendimento com Hora Marcada</p>
-                        <span><i class="fab fa-whatsapp contact-icon"></i></span>
-                        <p><a class="contact-link" href="https://wa.me/5511945676824">+55 11 94567-6824</a></p>
-                        <span><i class="far fa-envelope contact-icon"></i></span>
-                        <p><a class="contact-link" href="mailto:contato@totalmusica.com.br">contato@totalmusica.com.br</a></p>
+        <!-- Serviços -->
+        <section class="section" id="servicos">
+            <div class="container">
+                <p class="section__label">Serviços</p>
+                <div class="service-highlight">
+                    <div class="service-highlight__content">
+                        <h2>Gravação e Produção Musical</h2>
+                        <p class="service-highlight__text">
+                            Do ensaio ao produto final. Gravação, arranjos, mixagem e masterização
+                            com acompanhamento personalizado do seu projeto.
+                        </p>
+                        <a href="producao-musical.html" class="btn btn--outline">
+                            Conheça o serviço <span aria-hidden="true">→</span>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Seta para voltar ao inicio da página -->
-        <a href="#topo" class="back-to-top" id="back-to-top" title="voltar ao início da página"><i class="fas fa-arrow-up"></i></a>
+        </section>
+
+        <!-- Sobre o Professor -->
+        <section class="section section--dark" id="professor">
+            <div class="container">
+                <p class="section__label">O professor</p>
+                <div class="about-preview">
+                    <img src="assets/img/jefferson-borim.webp" alt="Professor Jefferson Borim"
+                        class="about-preview__photo" width="380" height="507" loading="lazy" />
+                    <div>
+                        <h2 class="about-preview__name">Prof. Jefferson Borim</h2>
+                        <p class="about-preview__text">
+                            Multi-instrumentista — canto, guitarra, violão, contrabaixo e viola 10 cordas —
+                            e professor desde <strong>1995</strong>. Fundou e dirigiu a escola Central Art por 12 anos.
+                            Em 2016, criou a Total Música, onde desenvolveu um método didático próprio focado na
+                            <strong>percepção auditiva</strong> e no desenvolvimento musical completo, integrando o
+                            acolhimento emocional ao ensino. Atende alunos no
+                            <strong>Brasil e no exterior</strong>.
+                        </p>
+                        <a href="sobre.html" class="about-preview__link">
+                            Conheça a história completa <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teoria Musical -->
+        <section class="section section--light" id="teoria">
+            <div class="container">
+                <div class="text-center">
+                    <p class="section__label">Ferramentas gratuitas</p>
+                    <h2>Teoria Musical</h2>
+                    <p class="text-muted" style="max-width: 480px; margin: var(--space-4) auto 0;">
+                        Consulte escalas e campos harmônicos em todas as tonalidades.
+                        Interativo, gratuito e direto ao ponto.
+                    </p>
+                </div>
+                <div class="grid grid--3 mt-8">
+                    <a href="teoria-musical/escala-maior.html" class="card card--center">
+                        <span class="card__icon" aria-hidden="true">♫</span>
+                        <h3 class="card__title">Escalas Maiores</h3>
+                        <p class="card__text">Todas as tonalidades no ciclo de quartas e quintas</p>
+                    </a>
+                    <a href="teoria-musical/campo-harmonico-maior.html" class="card card--center">
+                        <span class="card__icon" aria-hidden="true">♫</span>
+                        <h3 class="card__title">Campo Harmônico Maior (Tríades)</h3>
+                        <p class="card__text">Acordes de 3 notas em todos os campos harmônicos maiores</p>
+                    </a>
+                    <a href="teoria-musical/campo-harmonico-maior-tetrades.html" class="card card--center">
+                        <span class="card__icon" aria-hidden="true">♫</span>
+                        <h3 class="card__title">Campo Harmônico Maior (Tétrades)</h3>
+                        <p class="card__text">Acordes de 4 notas com sétimas em todas as tonalidades</p>
+                    </a>
+                    <a href="teoria-musical/escala-menor.html" class="card card--center">
+                        <span class="card__icon" aria-hidden="true">♫</span>
+                        <h3 class="card__title">Escalas Menores</h3>
+                        <p class="card__text">Todas as tonalidades e variações no ciclo de quartas e quintas</p>
+                    </a>
+                    <a href="teoria-musical/campo-harmonico-menor.html" class="card card--center">
+                        <span class="card__icon" aria-hidden="true">♫</span>
+                        <h3 class="card__title">Campo Harmônico Menor (Tríades)</h3>
+                        <p class="card__text">Acordes de 3 notas do campo harmônico menor harmônico</p>
+                    </a>
+                    <a href="teoria-musical/campo-harmonico-menor-tetrades.html" class="card card--center">
+                        <span class="card__icon" aria-hidden="true">♫</span>
+                        <h3 class="card__title">Campo Harmônico Menor (Tétrades)</h3>
+                        <p class="card__text">Acordes de 4 notas com sétimas do campo harmônico menor</p>
+                    </a>
+                    <a href="teoria-musical/circulo-das-quintas.html" class="card card--center">
+                        <span class="card__icon" aria-hidden="true">♫</span>
+                        <h3 class="card__title">Ciclo das Quintas</h3>
+                        <p class="card__text">Visualização interativa do ciclo de quintas e quartas</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="section section--dark" id="contato">
+            <div class="container cta-final">
+                <p class="section__label">Comece agora</p>
+                <h2 class="cta-final__title">Pronto para a sua jornada musical?</h2>
+                <p class="cta-final__text">
+                    Agende uma entrevista inicial gratuita pelo WhatsApp. Fale direto com o professor.
+                </p>
+                <a href="https://wa.me/5511996884384?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20entrevista%20inicial%20gratuita."
+                    target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg">
+                    <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 2.127.556 4.122 1.528 5.854L0 24l6.335-1.495A11.932 11.932 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.97 0-3.84-.53-5.46-1.511l-.39-.234-4.052.956.99-3.9-.256-.406A9.698 9.698 0 012.25 12 9.75 9.75 0 0112 2.25 9.75 9.75 0 0121.75 12 9.75 9.75 0 0112 21.75z" />
+                    </svg>
+                    Falar no WhatsApp
+                </a>
+                <span class="cta-final__email">
+                    ou envie um e-mail para <a href="mailto:contato@totalmusica.com.br">contato@totalmusica.com.br</a>
+                </span>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="row mt-5 text-white">
-            <div class="col-12 text-center my-5 d-flex flex-column justify-content-around align-items-center">
-                <img src="assets/img/logo_total_musica.svg" alt="Logo Total Música" class="img-fluid img-footer">
-
-                <h4>Aulas Particulares Especializadas</h4>
-                <h5>Escola de Música em SBC</h5>
-                <div class="pb-5">
-                    <a href="https://www.facebook.com/totalmusicaoficial" target="_blank" title="Página do Facebook da Total Música"><i
-                            class="fab fa-facebook social-icon mx-1" alt=""></i></a>
-                    <a href="https://www.youtube.com/totalmusica" target="_blank" title="Canal no Youtube da Total Música"><i
-                            class="fab fa-youtube social-icon mx-1"></i></a>
-                    <a href="https://www.instagram.com/totalmusica" target="_blank" title="Perfil no Instagram da Total Música"><i
-                            class="fab fa-instagram social-icon mx-1"></i></a>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <a href="/" class="footer__brand" aria-label="Total Música - Página inicial">
+                        Total Música
+                    </a>
+                    <p class="footer__brand-text">
+                        Fundada em 2016 pelo Prof. Jefferson Borim.
+                        Programa de Desenvolvimento Musical Individual em canto, guitarra, violão e contrabaixo —
+                        online e presencial. Gravação e produção musical.
+                    </p>
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com/totalmusica" target="_blank" rel="noopener"
+                            class="footer__social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/totalmusica" target="_blank" rel="noopener"
+                            class="footer__social-link" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z" />
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/totalmusicaoficial" target="_blank" rel="noopener"
+                            class="footer__social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <small>Total Música 2021 | Todos os direitos reservados</small>
-                <small>Desenvolvido por Amanda Borim</small>
+                <div>
+                    <h4 class="footer__heading">Aulas</h4>
+                    <ul class="footer__links">
+                        <li><a href="aulas-de-canto.html">Canto</a></li>
+                        <li><a href="aulas-de-guitarra.html">Guitarra</a></li>
+                        <li><a href="aulas-de-violao.html">Violão</a></li>
+                        <li><a href="aulas-de-contrabaixo.html">Contrabaixo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Serviços</h4>
+                    <ul class="footer__links">
+                        <li><a href="producao-musical.html">Produção Musical e Gravação</a></li>
+                    </ul>
+                    <h4 class="footer__heading" style="margin-top: var(--space-6);">Conteúdo</h4>
+                    <ul class="footer__links">
+                        <li><a href="teoria-musical/">Teoria Musical</a></li>
+                        <li><a href="sobre.html">Sobre o Professor</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Contato</h4>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://wa.me/5511996884384" target="_blank" rel="noopener">
+                                (11) 99688-4384
+                            </a>
+                        </li>
+                        <li><a href="mailto:contato@totalmusica.com.br">contato@totalmusica.com.br</a></li>
+                        <li style="color: var(--gray-400);">São Bernardo do Campo, SP</li>
+                    </ul>
+                </div>
             </div>
+            <div class="footer__bottom">
+                <small>Total Música &copy; 2016–2026 · Todos os direitos reservados</small>
+                <small> · Desenvolvido por Amanda Borim</small>
+            </div>
+        </div>
     </footer>
 
-    <script src="assets/js/libs/jquery-3.6.0.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="assets/js/libs/bootstrap.min.js"></script>
-    <script src="assets/js/back-to-top.js"></script>
-
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5511996884384?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20aulas."
+        target="_blank" rel="noopener" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+        <svg viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            <path
+                d="M12 0C5.373 0 0 5.373 0 12c0 2.127.556 4.122 1.528 5.854L0 24l6.335-1.495A11.932 11.932 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.97 0-3.84-.53-5.46-1.511l-.39-.234-4.052.956.99-3.9-.256-.406A9.698 9.698 0 012.25 12 9.75 9.75 0 0112 2.25 9.75 9.75 0 0121.75 12 9.75 9.75 0 0112 21.75z" />
+        </svg>
+    </a>
 </body>
 
 </html>
